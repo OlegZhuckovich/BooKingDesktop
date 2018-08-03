@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="pane7" fx:id="rootPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="560.0" prefWidth="900.0" stylesheets="@../../css/BooKing.css" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.epam.zhuckovich.client.controller.clientcontroller.MyLibraryController">
+   <children>
+      <Label fx:id="libraryLabel" layoutX="158.0" layoutY="200.0" text="Здесь будут находится взятые Вами книги" textFill="WHITE">
+         <font>
+            <Font size="26.0" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect>
+      </Label>
+      <TableView fx:id="BookTable" layoutX="75.0" layoutY="80.0" prefHeight="350.0" prefWidth="750.0">
+         <columns>
+            <TableColumn prefWidth="75.0" text="Книга">
+               <columns>
+                  <TableColumn fx:id="titleColumn" prefWidth="125.0" text="Название" />
+                  <TableColumn fx:id="authorColumn" minWidth="9.0" prefWidth="121.0" text="Автор" />
+                  <TableColumn fx:id="genreColumn" prefWidth="78.0" text="Жанр" />
+                  <TableColumn fx:id="publishingColumn" prefWidth="115.0" text="Издательство" />
+                  <TableColumn fx:id="yearColumn" prefWidth="58.0" text="Год" />
+                  <TableColumn fx:id="pageColumn" prefWidth="62.0" text="Страниц" />
+               </columns>
+            </TableColumn>
+            <TableColumn fx:id="orderColumn" minWidth="0.0" prefWidth="89.0" text="Дата выдачи" />
+            <TableColumn fx:id="returnColumn" minWidth="0.0" prefWidth="101.0" text="Дата возврата" />
+         </columns>
+      </TableView>
+      <Button fx:id="ReturnBookButton" layoutX="571.0" layoutY="469.0" mnemonicParsing="false" onAction="#returnBook" text="Вернуть книгу" />
+      <Button fx:id="MainMenuButton" layoutX="715.0" layoutY="469.0" mnemonicParsing="false" onAction="#goToMainMenu" text="Главное меню" />
+   </children>
+</AnchorPane>

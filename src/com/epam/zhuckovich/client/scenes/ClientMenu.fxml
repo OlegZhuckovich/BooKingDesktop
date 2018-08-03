@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="pane3" fx:id="rootPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="560.0" prefWidth="900.0" style="-fx-background-color: blue;" stylesheets="@../../css/BooKing.css" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.epam.zhuckovich.client.controller.clientcontroller.ClientMenuController">
+   <children>
+      <ImageView fx:id="OrderBookButton" fitHeight="160.0" fitWidth="160.0" layoutX="210.0" layoutY="120.0" onMouseClicked="#OpenOrderBook" onMouseEntered="#makeDarker" onMouseExited="#makeDefault" pickOnBounds="true" preserveRatio="true" styleClass="button">
+         <image>
+            <Image url="@../resources/OrderBook.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="ReadBookButton" fitHeight="168.0" fitWidth="160.0" layoutX="530.0" layoutY="120.0" onMouseClicked="#OpenReader" onMouseEntered="#makeDarker" onMouseExited="#makeDefault" pickOnBounds="true" preserveRatio="true" styleClass="button">
+         <image>
+            <Image url="@../resources/ReadBook.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="EditLibraryCardButton" fitHeight="160.0" fitWidth="160.0" layoutX="370.0" layoutY="120.0" onMouseClicked="#OpenEditLibraryCard" onMouseEntered="#makeDarker" onMouseExited="#makeDefault" pickOnBounds="true" preserveRatio="true" styleClass="button">
+         <image>
+            <Image url="@../resources/LibraryCard.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="InternetLibraryButton" fitHeight="160.0" fitWidth="160.0" layoutX="370.0" layoutY="280.0" onMouseClicked="#OpenMyLibrary" onMouseEntered="#makeDarker" onMouseExited="#makeDefault" pickOnBounds="true" preserveRatio="true" styleClass="button">
+         <image>
+            <Image url="@../resources/InternetLibrary.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="BuildGraphButton" fitHeight="160.0" fitWidth="160.0" layoutX="210.0" layoutY="280.0" onMouseClicked="#OpenBuildGraph" onMouseEntered="#makeDarker" onMouseExited="#makeDefault" pickOnBounds="true" preserveRatio="true" styleClass="button">
+         <image>
+            <Image url="@../resources/MakeGraph.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="ExitButton" fitHeight="160.0" fitWidth="160.0" layoutX="530.0" layoutY="280.0" onMouseClicked="#goToStartPage" onMouseEntered="#makeDarker" onMouseExited="#makeDefault" pickOnBounds="true" preserveRatio="true" styleClass="button">
+         <image>
+            <Image url="@../resources/ExitMenu.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="80.0" fitWidth="80.0" layoutX="47.0" layoutY="30.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../resources/BooKingLogo.png" />
+         </image>
+      </ImageView>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#3e5368" height="50.0" layoutX="700.0" layoutY="45.0" stroke="#3e5368" strokeType="INSIDE" width="160.0" />
+      <Rectangle fx:id="MenuItemBlock" arcHeight="5.0" arcWidth="5.0" fill="#3e5368" height="50.0" layoutX="210.0" layoutY="440.0" opacity="0.0" stroke="#3e5368" strokeType="INSIDE" width="480.0" />
+      <Label fx:id="UserLabel" layoutX="141.0" layoutY="66.0" textFill="WHITE">
+         <font>
+            <Font size="28.0" />
+         </font>
+         <effect>
+            <Glow />
+         </effect>
+      </Label>
+      <Label fx:id="DateLabel" alignment="CENTER" layoutX="706.0" layoutY="57.0" prefHeight="26.0" prefWidth="150.0" textFill="WHITE">
+         <font>
+            <Font size="17.0" />
+         </font></Label>
+      <Label layoutX="141.0" layoutY="36.0" text="BooKing" textFill="#ff8585">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <Label fx:id="MenuItemLabel" alignment="CENTER" contentDisplay="RIGHT" layoutX="211.0" layoutY="457.0" prefHeight="17.0" prefWidth="480.0" textAlignment="CENTER" textFill="WHITE" textOverrun="CLIP">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

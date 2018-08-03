@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane id="pane1" fx:id="rootPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="560.0" prefWidth="900.0" stylesheets="@../../css/BooKing.css" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.epam.zhuckovich.client.controller.admincontroller.AddBookController">
+   <children>
+      <Button fx:id="MainMenuButton" layoutX="350.0" layoutY="470.0" mnemonicParsing="false" onAction="#goToMainMenu" prefHeight="27.0" prefWidth="200.0" text="Главное меню" />
+      <Button fx:id="AddBookButton" layoutX="350.0" layoutY="420.0" mnemonicParsing="false" onAction="#AddBookInLibrary" prefHeight="27.0" prefWidth="200.0" text="Добавить в библиотеку" />
+      <TextField fx:id="titleField" layoutX="350.0" layoutY="50.0" prefHeight="27.0" prefWidth="200.0" promptText="Название" />
+      <TextField fx:id="authorField" layoutX="350.0" layoutY="100.0" prefHeight="27.0" prefWidth="200.0" promptText="Автор" />
+      <TextField fx:id="quantityField" layoutX="350.0" layoutY="150.0" prefHeight="27.0" prefWidth="200.0" promptText="Количество экземпляров" />
+      <TextField fx:id="publishingHouseField" layoutX="350.0" layoutY="200.0" prefHeight="27.0" prefWidth="200.0" promptText="Издательство" />
+      <TextField fx:id="yearField" layoutX="350.0" layoutY="250.0" prefHeight="27.0" prefWidth="200.0" promptText="Год издания" />
+      <TextField fx:id="pagesField" layoutX="350.0" layoutY="300.0" prefHeight="27.0" prefWidth="200.0" promptText="Количество страниц" />
+      <ComboBox fx:id="genreComboBox" layoutX="350.0" layoutY="350.0" prefHeight="27.0" prefWidth="200.0" promptText="Жанр" />
+   </children>
+</AnchorPane>

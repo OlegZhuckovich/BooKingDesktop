@@ -1,0 +1,86 @@
+.button {
+    -fx-background-color: #4e6882;
+    /*-fx-background-insets: 0, 0 0 1 0 ;
+    -fx-background-radius: 0 ;*/
+    -fx-text-fill: white;
+}
+
+.button Text {
+    -fx-effect: dropshadow( one-pass-box , rgba(0,0,0,0.9) , 1, 0.0 , 0 , 1 );
+}
+
+.button:hover {
+    -fx-background-color:#445c75;
+    -fx-cursor: hand;
+}
+
+.text-field {
+    -fx-background-color: -fx-text-box-border, -fx-background ;
+    /*-fx-background-insets: 0, 0 0 1 0 ;
+    -fx-background-radius: 0 ;*/
+}
+.text-field:focused {
+    -fx-background-color: -fx-focus-color, -fx-background ;
+}
+
+
+#pane1{
+    -fx-background-image: url("../client/resources/AddNewBook.png");
+}
+
+#pane2{
+    -fx-background-image: url("../client/resources/BuildGraphMenu.png");
+}
+
+#pane3{
+    -fx-background-image: url("../client/resources/LibraryClientMenu.png");
+}
+
+#pane4{
+    -fx-background-image: url("../client/resources/EditLibraryCardMenu.png");
+}
+
+#pane5{
+    -fx-background-image: url("../client/resources/LibrarianMenu.png");
+}
+
+#pane6{
+    -fx-background-image: url("../client/resources/LibraryControlMenu.png");
+}
+
+#pane7{
+    -fx-background-image: url("../client/resources/MyLibrary.png");
+}
+
+#pane8{
+    -fx-background-image: url("../client/resources/OrderBookMenu.png");
+}
+
+#pane9{
+    -fx-background-image: url("../client/resources/RegisterBackground.png");
+}
+
+#pane10{
+    -fx-background-image: url("../client/resources/RegisterLibrarian.png");
+}
+
+#pane11{
+    -fx-background-image: url("../client/resources/Library.png");
+}
+
+#pane12{
+    -fx-background-image: url("../client/resources/ViewUserData.png");
+}
+
+#pane13{
+    -fx-background-image: url("../client/resources/ForgetPasswordBackground.png");
+}
+
+#pane14{
+    -fx-background-image: url("../client/resources/LibraryAdminChart.png");
+}
+
+.chart-pie-label { /*this is what you need for labels*/
+    -fx-fill: #ffffff;
+    -fx-font-size: 1em;
+}

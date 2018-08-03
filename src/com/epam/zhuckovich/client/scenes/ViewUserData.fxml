@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="pane12" fx:id="rootPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="560.0" prefWidth="900.0" stylesheets="@../../css/BooKing.css" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.epam.zhuckovich.client.controller.admincontroller.ViewUserDataController">
+   <children>
+      <TableView fx:id="UserTable" layoutX="85.0" layoutY="60.0" prefHeight="400.0" prefWidth="730.0">
+        <columns>
+            <TableColumn fx:id="idColumn" prefWidth="103.0" text="№ абонемента" />
+            <TableColumn fx:id="nameColumn" prefWidth="89.0" text="Имя" />
+            <TableColumn fx:id="surnameColumn" prefWidth="119.0" text="Фамилия" />
+            <TableColumn fx:id="emailColumn" minWidth="8.0" prefWidth="157.0" text="Email" />
+            <TableColumn fx:id="dateColumn" prefWidth="124.0" text="Дата регистрации" />
+            <TableColumn fx:id="genderColumn" prefWidth="58.0" text="Пол" />
+            <TableColumn fx:id="bookColumn" minWidth="0.0" prefWidth="79.0" text="Взято книг" />
+        </columns>
+      </TableView>
+      <Button fx:id="MainMenuButton" layoutX="705.0" layoutY="490.0" mnemonicParsing="false" onAction="#goToMainMenu" text="Главное меню" />
+   </children>
+</AnchorPane>

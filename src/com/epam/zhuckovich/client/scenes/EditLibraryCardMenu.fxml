@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="pane4" fx:id="rootPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="560.0" prefWidth="900.0" stylesheets="@../../css/BooKing.css" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.epam.zhuckovich.client.controller.clientcontroller.EditLibraryCardController">
+   <children>
+      <Button fx:id="mainMenuButton" layoutX="350.0" layoutY="450.0" mnemonicParsing="false" onAction="#goToMainMenu" prefHeight="27.0" prefWidth="200.0" text="Главное меню" />
+      <TextField fx:id="editNameField" layoutX="350.0" layoutY="120.0" prefHeight="27.0" prefWidth="200.0" promptText="Имя" />
+      <TextField fx:id="editSurnameField" layoutX="350.0" layoutY="170.0" prefHeight="27.0" prefWidth="200.0" promptText="Фамилия" />
+      <TextField fx:id="editEmailField" layoutX="350.0" layoutY="220.0" prefHeight="27.0" prefWidth="200.0" promptText="Email" />
+      <PasswordField fx:id="editPasswordField" layoutX="350.0" layoutY="270.0" prefHeight="27.0" prefWidth="200.0" promptText="Пароль" />
+      <Button fx:id="DeleteAccountButtton" layoutX="350.0" layoutY="400.0" mnemonicParsing="false" onAction="#deleteAccount" prefHeight="27.0" prefWidth="200.0" text="Удалить аккаунт" />
+      <Button fx:id="SaveChangesButton" layoutX="351.0" layoutY="350.0" mnemonicParsing="false" onAction="#saveChanges" prefHeight="27.0" prefWidth="200.0" text="Сохранить изменения" />
+   </children>
+</AnchorPane>

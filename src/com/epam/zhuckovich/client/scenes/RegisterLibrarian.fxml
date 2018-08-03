@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane id="pane10" fx:id="rootPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="560.0" prefWidth="900.0" stylesheets="@../../css/BooKing.css" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.epam.zhuckovich.client.controller.admincontroller.RegisterLibrarianController">
+   <children>
+      <Button fx:id="RegisterButton" layoutX="350.0" layoutY="420.0" mnemonicParsing="false" onAction="#registerLibrarian" prefHeight="27.0" prefWidth="200.0" text="Зарегистрировать" />
+      <Button fx:id="MainMenuButton" layoutX="350.0" layoutY="470.0" mnemonicParsing="false" onAction="#goToMainMenu" prefHeight="27.0" prefWidth="200.0" text="Главное меню" />
+      <TextField fx:id="nameField" layoutX="350.0" layoutY="100.0" prefHeight="27.0" prefWidth="200.0" promptText="Имя" />
+      <TextField fx:id="surnameField" layoutX="350.0" layoutY="150.0" prefHeight="27.0" prefWidth="200.0" promptText="Фамилия" />
+      <TextField fx:id="emailField" layoutX="350.0" layoutY="200.0" prefHeight="27.0" prefWidth="200.0" promptText="Email" />
+      <PasswordField fx:id="passwordField" layoutX="350.0" layoutY="250.0" prefHeight="27.0" prefWidth="200.0" promptText="Пароль" />
+      <ComboBox fx:id="GenderComboBox" layoutX="350.0" layoutY="350.0" prefHeight="27.0" prefWidth="200.0" />
+      <PasswordField fx:id="repeatPasswordField" layoutX="350.0" layoutY="300.0" prefHeight="27.0" prefWidth="200.0" promptText="Повторите пароль" />
+   </children>
+</AnchorPane>

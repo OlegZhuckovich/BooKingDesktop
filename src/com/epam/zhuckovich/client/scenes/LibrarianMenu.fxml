@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="pane5" fx:id="rootPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="560.0" prefWidth="900.0" stylesheets="@../../css/BooKing.css" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.epam.zhuckovich.client.controller.admincontroller.LibrarianMenuController">
+   <children>
+      <Label fx:id="LibrarianLabel" layoutX="141.0" layoutY="66.0" textFill="WHITE">
+         <font>
+            <Font size="28.0" />
+         </font>
+         <effect>
+            <Glow />
+         </effect>
+      </Label>
+      <ImageView fx:id="ViewUserDataButton" fitHeight="160.0" fitWidth="160.0" layoutX="210.0" layoutY="120.0" onMouseClicked="#OpenUserViewer" onMouseEntered="#makeDarker" onMouseExited="#makeDefault" pickOnBounds="true" preserveRatio="true" styleClass="button">
+         <image>
+            <Image url="@../resources/ViewUsers.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="ExitButton" fitHeight="160.0" fitWidth="160.0" layoutX="530.0" layoutY="280.0" onMouseClicked="#goToStartPage" onMouseEntered="#makeDarker" onMouseExited="#makeDefault" pickOnBounds="true" preserveRatio="true" styleClass="button">
+         <image>
+            <Image url="@../resources/ExitMenu.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="ControlBookButton" fitHeight="160.0" fitWidth="160.0" layoutX="530.0" layoutY="120.0" onMouseClicked="#OpenLibraryControl" onMouseEntered="#makeDarker" onMouseExited="#makeDefault" pickOnBounds="true" preserveRatio="true" styleClass="button">
+         <image>
+            <Image url="@../resources/LibraryControl.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="GraphicAnalyticsButton" fitHeight="160.0" fitWidth="160.0" layoutX="210.0" layoutY="280.0" onMouseClicked="#OpenLibraryStatystic" onMouseEntered="#makeDarker" onMouseExited="#makeDefault" pickOnBounds="true" preserveRatio="true" styleClass="button">
+         <image>
+            <Image url="@../resources/Chart.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="RegisterNewLibrarianButton" fitHeight="160.0" fitWidth="160.0" layoutX="370.0" layoutY="280.0" onMouseClicked="#OpenRegisterLibrarian" onMouseEntered="#makeDarker" onMouseExited="#makeDefault" pickOnBounds="true" preserveRatio="true" styleClass="button">
+         <image>
+            <Image url="@../resources/RegisterNewLibrarian.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="AddBookButton" fitHeight="160.0" fitWidth="160.0" layoutX="370.0" layoutY="120.0" onMouseClicked="#OpenAddNewBook" onMouseEntered="#makeDarker" onMouseExited="#makeDefault" pickOnBounds="true" preserveRatio="true" styleClass="button">
+         <image>
+            <Image url="@../resources/AddBook.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="80.0" fitWidth="80.0" layoutX="47.0" layoutY="30.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../resources/BooKingLogo.png" />
+         </image>
+      </ImageView>
+      <Rectangle fx:id="MenuItemBlock" arcHeight="5.0" arcWidth="5.0" fill="#3e5368" height="50.0" layoutX="210.0" layoutY="440.0" opacity="0.0" stroke="#3e5368" strokeType="INSIDE" width="480.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#3e5368" height="50.0" layoutX="700.0" layoutY="45.0" stroke="#3e5368" strokeType="INSIDE" width="160.0" />
+      <Label layoutX="141.0" layoutY="36.0" text="BooKing" textFill="#ff8585">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <Label fx:id="MenuItemLabel" alignment="CENTER" contentDisplay="RIGHT" layoutX="211.0" layoutY="457.0" prefHeight="17.0" prefWidth="480.0" textAlignment="CENTER" textFill="WHITE" textOverrun="CLIP">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="DateLabel" alignment="CENTER" layoutX="706.0" layoutY="57.0" prefHeight="26.0" prefWidth="150.0" textFill="WHITE">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="pane6" fx:id="rootPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="560.0" prefWidth="900.0" stylesheets="@../../css/BooKing.css" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.epam.zhuckovich.client.controller.admincontroller.LibraryControlController">
+   <children>
+      <Button fx:id="SaveChangesButton" layoutX="421.0" layoutY="490.0" mnemonicParsing="false" onAction="#saveChanges" text="Сохранить изменения" />
+      <Button fx:id="MainMenuButton" layoutX="614.0" layoutY="490.0" mnemonicParsing="false" onAction="#goToMainMenu" prefHeight="27.0" prefWidth="161.0" text=" Главное меню" />
+      <TableView fx:id="BookTable" layoutX="125.0" layoutY="90.0" prefHeight="370.0" prefWidth="650.0">
+         <columns>
+            <TableColumn fx:id="titleColumn" onEditCommit="#changeTitle" prefWidth="126.0" text="Название" />
+            <TableColumn fx:id="authorColumn" onEditCommit="#changeAuthor" prefWidth="121.0" text="Автор" />
+            <TableColumn fx:id="genreColumn" prefWidth="92.0" text="Жанр" />
+            <TableColumn fx:id="publishingColumn" onEditCommit="#changePublishingHouse" prefWidth="109.0" text="Издательство" />
+            <TableColumn fx:id="yearColumn" onEditCommit="#changeYear" prefWidth="54.0" text="Год" />
+            <TableColumn fx:id="pagesColumn" onEditCommit="#changePages" prefWidth="64.0" text="Страниц" />
+            <TableColumn fx:id="quantityColumn" onEditCommit="#changeQuantity" prefWidth="83.0" text="Количество" />
+         </columns>
+      </TableView>
+      <Button fx:id="TextReportButton" layoutX="209.0" layoutY="490.0" mnemonicParsing="false" onAction="#createTextReport" text=" Создать текстовый отчёт" />
+      <Button fx:id="SaveChangesButton1" layoutX="596.0" layoutY="40.0" mnemonicParsing="false" onAction="#saveChanges" text="Произвести фильтрацию" />
+      <TextField layoutX="126.0" layoutY="40.0" prefHeight="27.0" prefWidth="300.0" promptText="Найти книги" />
+   </children>
+</AnchorPane>

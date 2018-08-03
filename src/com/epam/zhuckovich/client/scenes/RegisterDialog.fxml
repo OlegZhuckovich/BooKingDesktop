@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="pane9" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="350.0" stylesheets="@../../css/BooKing.css" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.epam.zhuckovich.client.controller.RegisterClientController">
+   <children>
+      <TextField fx:id="nameRegisterField" layoutX="50.0" layoutY="100.0" prefHeight="27.0" prefWidth="250.0" promptText="Имя" />
+      <TextField fx:id="surnameRegisterField" layoutX="50.0" layoutY="150.0" prefHeight="27.0" prefWidth="250.0" promptText="Фамилия" />
+      <TextField fx:id="emailRegisterField" layoutX="50.0" layoutY="200.0" prefHeight="27.0" prefWidth="250.0" promptText="Email" />
+      <PasswordField fx:id="passwordRegisterField" layoutX="50.0" layoutY="250.0" prefHeight="27.0" prefWidth="250.0" promptText="Пароль" />
+      <PasswordField fx:id="rpPasswordRegisterField" layoutX="50.0" layoutY="300.0" prefHeight="27.0" prefWidth="250.0" promptText="Повторите пароль" />
+      <ComboBox fx:id="genderRegisterBox" layoutX="50.0" layoutY="350.0" prefHeight="27.0" prefWidth="250.0" promptText="Ваш пол" />
+      <Button fx:id="registerFormButton" layoutX="50.0" layoutY="420.0" mnemonicParsing="false" onAction="#registerClientInDatabase" prefHeight="27.0" prefWidth="250.0" text="Зарегистрироваться" />
+      <Label layoutX="140.0" layoutY="35.0" prefHeight="40.0" prefWidth="142.0" text="BooKing" textFill="#f56767">
+         <font>
+            <Font size="33.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="70.0" layoutY="30.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../resources/BooKingLogo.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
